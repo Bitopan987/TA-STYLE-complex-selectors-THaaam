@@ -140,10 +140,336 @@ table {
   box-sizing: border-box;
 }
 
+/* Variables */
+
+:root {
+  --primary: #59bfc2;
+  --secondary: #f9234d;
+  --dark: #000000;
+  --text: rgb(55, 75, 134);
+  --pure: #fff;
+  --ternary: #bbecec;
+  --dark: #7d8fb3;
+}
+
+/* Global */
+
+body {
+  line-height: 1.5;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Modular Classes */
+
+.center {
+  text-align: center;
+}
 /* Container */
 
 .container {
-  max-width: 70rem;
+  max-width: 67rem;
   margin: 0 auto;
   padding: 0 2rem;
+  width: 100%;
+}
+
+/* Global */
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* Flex */
+
+.flex {
+  display: flex;
+}
+
+.flex-48 {
+  flex: 0 1 48%;
+}
+
+.flex-45 {
+  flex: 0 1 45%;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-stretch {
+  align-self: stretch;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* Header */
+
+.header {
+  padding: 0.6rem 0;
+  position: absolute;
+  width: 100%;
+}
+
+.brand h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--pure);
+}
+
+.navbar li {
+  margin-left: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navbar li a:hover {
+  color: var(--text);
+}
+
+.navbar li a {
+  color: var(--pure);
+  font-weight: 600;
+}
+
+/* Hero Section */
+
+.hero {
+  background-color: var(--primary);
+  height: 100vh;
+}
+
+.hero_content {
+  margin: 0 auto;
+  max-width: 40rem;
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.hero_content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--pure);
+}
+
+.btn {
+  background-color: var(--pure);
+  color: var(--text);
+  padding: 0.7rem 1.2rem;
+  display: inline-block;
+  margin-top: 2rem;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--text);
+}
+
+.intro {
+  margin-top: -25rem;
+}
+
+.file img {
+  width: 3rem;
+}
+
+.file a {
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.file span {
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding-left: 0.6rem;
+}
+
+.file {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 2px solid #b8c9eb;
+  padding-bottom: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.img-container img {
+  box-shadow: 20px 20px 50px 20px #61cfd31f;
+}
+
+.file span {
+  color: #b8c9eb;
+}
+
+/* Progress Section */
+
+.progress-text h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text);
+  padding: 1.5rem 0;
+}
+
+.progress-text p {
+  color: var(--dark);
+  font-size: 1.2rem;
+  padding-bottom: 1.2rem;
+  line-height: 1.7;
+}
+
+.progress-text {
+  padding-right: 3rem;
+}
+
+.btn-learn {
+  background-color: var(--primary);
+  padding: 0.5rem 1.2rem;
+  display: inline-block;
+  color: var(--pure);
+  font-size: 1.2rem;
+}
+
+.progress-graph {
+  height: 20rem;
+}
+
+.btn-learn:before {
+  content: "\25B6";
+  padding-right: 10px;
+}
+
+.btn-learn:after {
+  content: "\25C0";
+  padding-left: 10px;
+}
+
+.btn-learn {
+  font-size: 1.5em;
+  color: red;
+  text-decoration: none;
+}
+
+/* Score Section */
+
+.score {
+  padding: 3rem 0;
+}
+
+caption {
+  padding: 0.7rem 0;
+  font-weight: 800;
+  font-size: 2rem;
+}
+table {
+  border: 2px solid var(--primary);
+  font-size: 19px;
+  width: 100%;
+  text-align: center;
+}
+
+td,
+th {
+  border: 2px solid var(--primary);
+  padding: 10px 14px;
+}
+
+th {
+  background-color: var(--primary);
+  color: var(--pure);
+}
+
+tr:nth-child(2n) {
+  background-color: #bbecec;
+}
+
+/* Card Section */
+
+.heading h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.heading p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.heading {
+  max-width: 24rem;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.card-content {
+  border-top: 2px solid #b8c9eb;
+  padding-top: 1rem;
+}
+
+.card-content img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.7rem;
+}
+
+.card-content div {
+  padding: 0.5rem 0;
+}
+
+.card article {
+  border: 2px solid var(--primary);
+  padding: 1.5rem 2rem;
+  border-radius: 7px;
+}
+
+.card {
+  justify-content: space-between;
+}
+
+.card h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.card p {
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.card h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.btn-secondary {
+  display: block;
+  background-color: var(--primary);
+  text-align: center;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  color: var(--pure);
+  font-weight: 700;
+  margin-top: 1rem;
 }
