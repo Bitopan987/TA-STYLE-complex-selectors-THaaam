@@ -21,12 +21,16 @@
   </head>
   <body>
     <header class="header">
-      <div class="container flex align-center justify-between">
+      <div class="container nav-bar flex align-center justify-between">
         <a href="#" class="brand">
           <h2>TrackL</h2>
         </a>
-        <nav class="navbar">
-          <ul class="flex">
+        <label class="bars" for="toggle">
+          <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" id="toggle" />
+        <nav class="nav">
+          <ul class="nav-menu flex">
             <li><a href="#">Features</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">About</a></li>
@@ -51,27 +55,27 @@
           <img src="./assets/hero.png" alt="hero-png" />
         </div>
         <div class="file">
-          <a href="#.pdf">
-            <img src="./assets/pdf.png" alt="pdf.png" />
-            <span>PDF FILE</span></a
-          >
-          <a href="#.doc">
-            <img src="./assets/word.png" alt="word.png" />
-            <span>WORD FILE</span></a
-          >
-          <a href="#.png">
-            <img src="./assets/image.png" alt="img.png" />
-            <span>IMAGE FILE</span></a
-          >
-          <a href="#.mp4">
-            <img src="./assets/video.png" alt="video.png" />
-            <span>VIDEO FILE</span></a
-          >
+          <a href="#.pdf" class="sm-flex-100"
+            ><span class="bg_img"></span>
+            <span class="file-text">PDF FILE</span>
+          </a>
+          <a href="#.doc" class="sm-flex-100"
+            ><span class="bg_img"></span>
+            <span class="file-text">WORD FILE</span>
+          </a>
+          <a href="#.png" class="sm-flex-100"
+            ><span class="bg_img"></span>
+            <span class="file-text">IMAGE FILE</span>
+          </a>
+          <a href="#.mp4" class="sm-flex-100"
+            ><span class="bg_img"></span>
+            <span class="file-text">VIDEO FILE</span>
+          </a>
         </div>
       </section>
       <section class="progress container">
         <div class="progress-content flex">
-          <article class="progress-text flex-45">
+          <article class="progress-text flex-45 flex-100">
             <h3>Monitor Your Learning And Improve It</h3>
             <p>
               Far far away,behind the word moutains,far from the counties
@@ -80,7 +84,7 @@
             <a href="#" class="btn-learn">Learn More</a>
           </article>
           <img
-            class="flex-45 progress-graph"
+            class="flex-45 progress-graph sm-flex-100 flex-100"
             src="./assets/learning-graph.png"
             alt="learning-graph"
           />
@@ -89,85 +93,88 @@
 
       <!-- Score Section -->
 
-      <section class="score container">
-        <table>
-          <caption>
-            <h4>WEEKLY SCORE</h4>
-          </caption>
-          <thead>
-            <tr>
-              <th>Days</th>
-              <th>Course</th>
-              <th>Score(0-100)</th>
-              <th>Hour Spent</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Monday</td>
-              <td>Product Design</td>
-              <td>40</td>
-              <td>2 Hour 30 Min</td>
-            </tr>
-            <tr>
-              <td>Tuesday</td>
-              <td>Product Design</td>
-              <td>60</td>
-              <td>3 Hour 20 Min</td>
-            </tr>
-            <tr>
-              <td>Wednesday</td>
-              <td>Data Science</td>
-              <td>20</td>
-              <td>1 Hour 30 Min</td>
-            </tr>
-            <tr>
-              <td>Thursday</td>
-              <td>UI Design</td>
-              <td>60</td>
-              <td>2 Hour 20 Min</td>
-            </tr>
-            <tr>
-              <td>Friday</td>
-              <td>UX Design</td>
-              <td>30</td>
-              <td>2 Hour 30 Min</td>
-            </tr>
-            <tr>
-              <td>Saturday</td>
-              <td>Data Science</td>
-              <td>50</td>
-              <td>2 Hour 40 Min</td>
-            </tr>
-            <tr>
-              <td>Sunday</td>
-              <td>HTML & CSS</td>
-              <td>70</td>
-              <td>3 Hour 30 Min</td>
-            </tr>
-          </tbody>
-        </table>
+      <section class="score">
+        <div class="container sm-center">
+          <table>
+            <caption>
+              <h4>WEEKLY SCORE</h4>
+            </caption>
+            <thead>
+              <tr>
+                <th>Days</th>
+                <th>Course</th>
+                <th>Score(0-100)</th>
+                <th>Hour Spent</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>Product Design</td>
+                <td>40</td>
+                <td>2 Hour 30 Min</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>Product Design</td>
+                <td>60</td>
+                <td>3 Hour 20 Min</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>Data Science</td>
+                <td>20</td>
+                <td>1 Hour 30 Min</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>UI Design</td>
+                <td>60</td>
+                <td>2 Hour 20 Min</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>UX Design</td>
+                <td>30</td>
+                <td>2 Hour 30 Min</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>Data Science</td>
+                <td>50</td>
+                <td>2 Hour 40 Min</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>HTML & CSS</td>
+                <td>70</td>
+                <td>3 Hour 30 Min</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <!-- Course Section -->
 
-      <section class="course container">
+      <section class="course container padding">
         <div class="heading">
           <h4>Join Us and Let's Study With Your Friends</h4>
-          <p>
+          <p class="flex align-center justify-center">
             Monthly
-            <span class="outer"> <span class="inner"></span></span>Yearly
+            <span class="outer"> <span class="inner">|</span></span
+            >Yearly
           </p>
         </div>
-        <div class="card flex">
-          <article class="flex-48">
+        <div class="card flex wrap">
+          <article class="flex-48 flex-100">
             <h3 class="center">Basic</h3>
             <p class="center">
               It's a long established fact that a reader will be distracted by a
-              readable
+              readable.
             </p>
-            <h2 class="center">48</h2>
-            <div class="card-content">
+            <h2 class="center price">48</h2>
+            <div class="card-content sm-center">
               <div class="flex align-center">
                 <img src="./assets/tick.png" alt="tick.png" />
                 <p>50 courses a day</p>
@@ -191,13 +198,13 @@
               <a href="#" class="btn-secondary">GET STARTED</a>
             </div>
           </article>
-          <article class="flex-48">
-            <h3 class="center">Basic</h3>
+          <article class="flex-48 flex-100">
+            <h3 class="center">Most Popular</h3>
             <p class="center">
               It's a long established fact that a reader will be distracted by a
               readable
             </p>
-            <h2 class="center">48</h2>
+            <h2 class="center price">58</h2>
             <div class="card-content">
               <div class="flex align-center">
                 <img src="./assets/tick.png" alt="tick.png" />
@@ -219,11 +226,82 @@
                 <img src="./assets/tick.png" alt="tick.png" />
                 <p>Get weekly reward</p>
               </div>
-              <a href="#" class="btn-secondary">GET STARTED</a>
+              <a href="#" class="btn-secondary active">GET STARTED</a>
             </div>
           </article>
+        </div>
+        <div class="trial center">
+          <h3>Start Your 30 Days Trial Now !</h3>
+          <a href="#" class="btn">Get Started</a>
         </div>
       </section>
     </main>
+
+    <footer class="footer padding">
+      <div class="container sm-center flex wrap justify-between">
+        <div class="flex-28 flex-100">
+          <h2>TrackL</h2>
+          <p class="text">
+            Far far away,behind the word mountains far from the.
+          </p>
+          <nav>
+            <ul class="social sm-center flex">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex-23 flex-100">
+          <h3>Features</h3>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Calender</a>
+              </li>
+              <li>
+                <a href="#">Forum</a>
+              </li>
+              <li>
+                <a href="#">Messanger</a>
+              </li>
+              <li>
+                <a href="#">Schedule</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex-23 flex-100">
+          <h3>Support</h3>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Career</a>
+              </li>
+              <li>
+                <a href="#">FAQs</a>
+              </li>
+              <li>
+                <a href="#">Security</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex-23 flex-100">
+          <h3>Contact</h3>
+          <a href="#"><strong>Email:</strong> info@gmail.com</a>
+          <p><strong>Phone:</strong> +1 200 300 400</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
